@@ -4,88 +4,7 @@ settings:
   autoInstallPeers: true
   excludeLinksFromLockfile: false
 
-dependencies:
-  '@gquittet/graceful-server':
-    specifier: ^4.0.8
-    version: 4.0.8
-  '@prisma/client':
-    specifier: ^5.10.2
-    version: 5.10.2(prisma@5.10.2)
-  '@socket.io/postgres-emitter':
-    specifier: ^0.1.0
-    version: 0.1.0
-  '@t3-oss/env-core':
-    specifier: ^0.8.0
-    version: 0.8.0(typescript@5.3.3)(zod@3.22.4)
-  date-fns:
-    specifier: ^3.3.1
-    version: 3.3.1
-  discord.js:
-    specifier: ^14.14.1
-    version: 14.14.1(bufferutil@4.0.8)(utf-8-validate@6.0.3)
-  dotenv:
-    specifier: ^16.4.2
-    version: 16.4.2
-  fastify:
-    specifier: ^4.26.1
-    version: 4.26.1
-  file-type:
-    specifier: ^19.0.0
-    version: 19.0.0
-  get-video-duration:
-    specifier: ^4.1.0
-    version: 4.1.0
-  gtts:
-    specifier: ^0.2.1
-    version: 0.2.1
-  lodash:
-    specifier: ^4.17.21
-    version: 4.17.21
-  mime-types:
-    specifier: ^2.1.35
-    version: 2.1.35
-  node-fetch:
-    specifier: ^3.3.2
-    version: 3.3.2
-  node-gyp:
-    specifier: ^10.0.1
-    version: 10.0.1
-  prisma:
-    specifier: ^5.10.2
-    version: 5.10.2
-  reflect-metadata:
-    specifier: ^0.2.1
-    version: 0.2.1
-  regenerator-runtime:
-    specifier: ^0.14.1
-    version: 0.14.1
-  rosetty:
-    specifier: ^3.0.22
-    version: 3.0.22
-  socket.io:
-    specifier: ^4.7.4
-    version: 4.7.4(bufferutil@4.0.8)(utf-8-validate@6.0.3)
-  tslib:
-    specifier: ^2.6.2
-    version: 2.6.2
-  unify-errors:
-    specifier: ^1.2.202
-    version: 1.2.202
-  unify-fastify:
-    specifier: ^1.4.24
-    version: 1.4.24
-  youtubei.js:
-    specifier: ^15.1.1
-    version: 15.1.1
-  zlib-sync:
-    specifier: ^0.1.9
-    version: 0.1.10
-  zod:
-    specifier: ^3.22.4
-    version: 3.22.4
-  zod-validation-error:
-    specifier: ^3.0.1
-    version: 3.0.1(zod@3.22.4)
+importers:
 
   .:
     dependencies:
@@ -254,11 +173,10 @@ packages:
     resolution: {integrity: sha512-acGdbYSfp2WheJoJm/EBBBLh/ID8KDc64ISZ9DYtBmC8/Q204PZJLHyzeB5qMzJ5trcOkybd78M4x2KWsUq++A==}
     engines: {node: '>=6.9.0'}
 
-  /@bufbuild/protobuf@2.9.0:
+  '@bufbuild/protobuf@2.9.0':
     resolution: {integrity: sha512-rnJenoStJ8nvmt9Gzye8nkYd6V22xUAnu4086ER7h1zJ508vStko4pMvDeQ446ilDTFpV5wnoc5YS7XvMwwMqA==}
-    dev: false
 
-  /@commitlint/cli@18.6.1(@types/node@20.11.17)(typescript@5.3.3):
+  '@commitlint/cli@18.6.1':
     resolution: {integrity: sha512-5IDE0a+lWGdkOvKH892HHAZgbAjcj1mT5QrfA/SVbLJV/BbBMGyKN0W5mhgjekPJJwEQdVNvhl9PwUacY58Usw==}
     engines: {node: '>=v18'}
     hasBin: true
@@ -355,7 +273,7 @@ packages:
     resolution: {integrity: sha512-+XI82Rm2hKnFwAySXEep4A7Kfoowt6weO6381jgW+wVdTpMS/56qCvoXyFRY0slcv7c/U8My2PwIB2/wEaAh7Q==}
     engines: {node: '>=16.11.0'}
 
-  /@esbuild/aix-ppc64@0.19.12:
+  '@esbuild/aix-ppc64@0.19.12':
     resolution: {integrity: sha512-bmoCYyWdEL3wDQIVbcyzRyeKLgk2WtWLTWz1ZIAZF/EGbNOwSA6ew3PftJ1PqMiOOGu0OyFMzG53L0zqIpPeNA==}
     engines: {node: '>=12'}
     cpu: [ppc64]
@@ -3669,10 +3587,7 @@ snapshots:
     dependencies:
       acorn: 8.11.3
 
-  /acorn@8.11.3:
-    resolution: {integrity: sha512-Y9rRfJG5jcKOE0CLisYbojUjIrIEE7AGMzA/Sm4BslANhbS+cDMpgBdcPT91oJ7OuJ9hYJBx59RjbhxVnrF8Xg==}
-    engines: {node: '>=0.4.0'}
-    hasBin: true
+  acorn@8.11.3: {}
 
   agent-base@7.1.0:
     dependencies:
@@ -3680,9 +3595,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  /aggregate-error@3.1.0:
-    resolution: {integrity: sha512-4I7Td01quW/RpocfNayFdFVk1qSuoh0E7JrbRJ16nH01HhKFQ88INq9Sd+nd72zqRySlr9BmDA8xlEJ6vJMrYA==}
-    engines: {node: '>=8'}
+  aggregate-error@3.1.0:
     dependencies:
       clean-stack: 2.2.0
       indent-string: 4.0.0
@@ -4730,9 +4643,7 @@ snapshots:
 
   http-cache-semantics@4.1.1: {}
 
-  /http-proxy-agent@7.0.2:
-    resolution: {integrity: sha512-T1gkAiYYDWYx3V5Bmyu7HcfcvL7mUrTWiM6yOfa3PIphViJ/gFPbvidQ+veqSOHci/PxBcDabeUNCzpOODJZig==}
-    engines: {node: '>= 14'}
+  http-proxy-agent@7.0.2:
     dependencies:
       agent-base: 7.1.0
       debug: 4.3.4
@@ -4752,9 +4663,9 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  /human-signals@2.1.0:
-    resolution: {integrity: sha512-B4FFZ6q/T2jhhksgkbEW3HBvWIfDW85snkQgawt07S7J5QXTk6BkNV+0yAeZrM5QpMAdYlocGoljn0sJ/WQkFw==}
-    engines: {node: '>=10.17.0'}
+  human-signals@2.1.0: {}
+
+  human-signals@5.0.0: {}
 
   husky@9.0.11: {}
 
@@ -4913,16 +4824,9 @@ snapshots:
     optionalDependencies:
       '@pkgjs/parseargs': 0.11.0
 
-  /jintr@3.3.1:
-    resolution: {integrity: sha512-nnOzyhf0SLpbWuZ270Omwbj5LcXUkTcZkVnK8/veJXtSZOiATM5gMZMdmzN75FmTyj+NVgrGaPdH12zIJ24oIA==}
+  jintr@3.3.1:
     dependencies:
       acorn: 8.11.3
-    dev: false
-
-  /jiti@1.21.0:
-    resolution: {integrity: sha512-gFqAIbuKyyso/3G2qhiO2OM6shY6EPP/R0+mkDbyspxKazh8BXDC5FiFsUjlczgdNz/vfra0da2y+aHrusLG/Q==}
-    hasBin: true
-    dev: true
 
   jiti@1.21.0: {}
 
@@ -5072,13 +4976,9 @@ snapshots:
     dependencies:
       yallist: 4.0.0
 
-  /magic-bytes.js@1.10.0:
-    resolution: {integrity: sha512-/k20Lg2q8LE5xiaaSkMXk4sfvI+9EGEykFS4b0CHHGWqDYU0bGUFSwchNOMA56D7TCs9GwVTkqe9als1/ns8UQ==}
-    dev: false
+  magic-bytes.js@1.10.0: {}
 
-  /make-fetch-happen@13.0.0:
-    resolution: {integrity: sha512-7ThobcL8brtGo9CavByQrQi+23aIfgYU++wg4B87AIS8Rb2ZBt/MEaDqzA00Xwv/jUjAjYkLHjVolYuTLKda2A==}
-    engines: {node: ^16.14.0 || >=18.0.0}
+  make-fetch-happen@13.0.0:
     dependencies:
       '@npmcli/agent': 2.2.1
       cacache: 18.0.2
@@ -5135,8 +5035,7 @@ snapshots:
 
   min-indent@1.0.1: {}
 
-  /minimatch@3.1.2:
-    resolution: {integrity: sha512-J7p63hRiAjw1NDEww1W7i37+ByIrOWO5XQQAzZ3VOcL0PNybwpfmV/N05zFAzwQ9USyEcX6t3UO+K5aqBQOIHw==}
+  minimatch@3.1.2:
     dependencies:
       brace-expansion: 1.1.11
 
@@ -5665,8 +5564,9 @@ snapshots:
 
   safer-buffer@2.1.2: {}
 
-  /secure-json-parse@2.7.0:
-    resolution: {integrity: sha512-6aU+Rwsezw7VR8/nyvKTx8QpWH9FrcYiXXlqC4z5d5XQBDRqtbfsRjnwGyqbi3gddNtWHuEk9OANUotL26qKUw==}
+  secure-json-parse@2.7.0: {}
+
+  semver@5.7.2: {}
 
   semver@6.3.1: {}
 
@@ -5934,9 +5834,7 @@ snapshots:
 
   through@2.3.8: {}
 
-  /to-regex-range@5.0.1:
-    resolution: {integrity: sha512-65P7iz6X5yEr1cwcgvQxbbIw7Uk3gOy5dIdtZ4rDveLqhrdJP+Li/Hx6tyK0NEb+2GCyneCMJiGqrADCSNk8sQ==}
-    engines: {node: '>=8.0'}
+  to-regex-range@5.0.1:
     dependencies:
       is-number: 7.0.0
 
@@ -5952,16 +5850,9 @@ snapshots:
       psl: 1.9.0
       punycode: 2.3.1
 
-  /trim-newlines@3.0.1:
-    resolution: {integrity: sha512-c1PTsA3tYrIsLGkJkzHF+w9F2EyxfXGo4UyJc4pFL++FMjnq0HJS69T3M7d//gKrFKwy429bouPescbjecU+Zw==}
-    engines: {node: '>=8'}
-    dev: true
+  trim-newlines@3.0.1: {}
 
-  /ts-api-utils@1.2.1(typescript@5.3.3):
-    resolution: {integrity: sha512-RIYA36cJn2WiH9Hy77hdF9r7oEwxAtB/TS9/S4Qd90Ap4z5FSiin5zEiTL44OII1Y3IIlEvxwxFUVgrHSZ/UpA==}
-    engines: {node: '>=16'}
-    peerDependencies:
-      typescript: '>=4.2.0'
+  ts-api-utils@1.2.1(typescript@5.3.3):
     dependencies:
       typescript: 5.3.3
 
@@ -6047,10 +5938,7 @@ snapshots:
     dependencies:
       '@fastify/busboy': 2.1.1
 
-  /undici@6.21.3:
-    resolution: {integrity: sha512-gBLkYIlEnSp8pFbT64yFgGE6UIB9tAkhukC23PmMDCe5Nd+cRqKxSjw5y54MK2AZMgZfJWMaNE4nYUHgi1XEOw==}
-    engines: {node: '>=18.17'}
-    dev: false
+  undici@6.21.3: {}
 
   unify-errors@1.2.202: {}
 
@@ -6206,17 +6094,13 @@ snapshots:
 
   yocto-queue@0.1.0: {}
 
-  /youtubei.js@15.1.1:
-    resolution: {integrity: sha512-fuEDj9Ky6cAQg93BrRVCbr+GTYNZQAIFZrx/a3oDRuGc3Mf5bS0dQfoYwwgjtSV7sgAKQEEdGtzRdBzOc8g72Q==}
+  youtubei.js@15.1.1:
     dependencies:
       '@bufbuild/protobuf': 2.9.0
       jintr: 3.3.1
       undici: 6.21.3
-    dev: false
 
-  /zlib-sync@0.1.10:
-    resolution: {integrity: sha512-t7/pYg5tLBznL1RuhmbAt8rNp5tbhr+TSrJFnMkRtrGIaPJZ6Dc0uR4u3OoQI2d6cGlVI62E3Gy6gwkxyIqr/w==}
-    requiresBuild: true
+  zlib-sync@0.1.10:
     dependencies:
       '@bufbuild/protobuf': 2.9.0
       jintr: 3.3.1
